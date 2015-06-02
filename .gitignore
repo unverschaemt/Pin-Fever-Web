@@ -3,3 +3,9 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
+/.sass-cache/
+/js/constants/PinFeverServer.js
+/css/
+/js/actions/TodoActions.js
+/js/stores/TodoStore.js
+/js/components/dumb/TabView.react.js

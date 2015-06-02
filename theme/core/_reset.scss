@@ -1,0 +1,34 @@
+a,
+progress,
+select {
+    @include appearance(none);
+}
+
+select {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+html {
+    @extend .fit;
+}
+
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

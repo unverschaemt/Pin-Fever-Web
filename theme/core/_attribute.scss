@@ -1,0 +1,26 @@
+@each $value in $justify-content {
+    [flex-justify-content="#{$value}"] {
+        @include justify-content(unquote($value));
+    }
+}
+
+@each $value in $flex-direction {
+    [flex-direction="#{$value}"] {
+        @include flex-direction(unquote($value));
+    }
+}
+
+@each $value in $wrap {
+    [flex-direction="#{$value}"] {
+        @include flex-wrap(unquote($value));
+    }
+}
+
+@each $value in $align-items {
+    [flex-align-items="#{$value}"] {
+        @include align-items(unquote($value));
+    }
+    [flex-align-self="#{$value}"] {
+        @include align-self(unquote($value));
+    }
+}

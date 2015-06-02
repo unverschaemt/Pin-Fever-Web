@@ -1,0 +1,46 @@
+h1 {
+    color: white;
+    margin: 10px 0 0;
+    line-height: 60px;
+}
+#login {
+    ::-webkit-input-placeholder {
+        color: $primary-color;
+    }
+    :-moz-placeholder {
+        color: $primary-color;
+        opacity: 1;
+    }
+    ::-moz-placeholder {
+        color: $primary-color;
+        opacity: 1;
+    }
+    :-ms-input-placeholder {
+        color: $primary-color;
+    }
+}
+input {
+    display: block;
+    @include appearance(none);
+    padding: 15px 0 5px;
+    margin: 3px 0;
+    outline: none;
+    border: 0;
+    &[type="text"],
+    &[type="password"] {
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        &:focus {
+            border-width: 2px;
+            border-color: white;
+        }
+    }
+    &[type="submit"] {
+        @include border-radius(4px);
+        color: white;
+        padding: 15px;
+        line-height: $default-font-size + 4;
+        font-size: $default-font-size + 4;
+    }
+}
